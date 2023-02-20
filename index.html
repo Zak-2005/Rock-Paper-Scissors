@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const computerChoice = getComputerChoice();
+        const playerChoice = prompt().toLowerCase();
+        function getComputerChoice(){
+            if(Math.floor(Math.random()*3)==0){
+                return 'scissors';
+            }
+            else if(Math.floor(Math.random()*3)==1){
+                return 'paper';
+            }
+            else{
+                return 'rock';
+            }
+        }
+
+        function playRound(getPlayerChoice, getComputerChoice){
+            if(getPlayerChoice=='scissors' && getComputerChoice=='paper'){
+                console.log('You Win! Scissors beats Paper');
+            }
+            else if(getPlayerChoice=='paper' && getComputerChoice=='rock'){
+                console.log('You Win! Paper beats Rock');
+            }
+            else if(getPlayerChoice=='rock' && getComputerChoice=='scissors'){
+                console.log('You Win! Rock beats Scissors');
+            }
+            else if(getPlayerChoice=='paper' && getComputerChoice=='scissors'){
+                console.log('You Lose! Scissors beats Paper');
+            }
+            else if(getPlayerChoice=='rock' && getComputerChoice=='paper'){
+                console.log('You Lose! Paper beats Rock');
+            }
+            else if(getPlayerChoice=='scissors' && getComputerChoice=='rock'){
+                console.log('You Lose! Rock beats Scissors');
+            }
+            else{
+                console.log('You Tied!');
+            }
+        }
+
+        
+    </script>
+
+</body>
+</html>
