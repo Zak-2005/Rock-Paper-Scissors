@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://img.freepik.com/free-photo/solid-gypsum-wall-textured-background_53876-101640.jpg?w=996&t=st=1677197044~exp=1677197644~hmac=fc774db60133151eb5ecf6856e60cb9f4f6737cde88682052d76105bae950647");
+    background-size: 100%;
+    gap: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(105, 189, 186)
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+
+}
+
+
+button {
+    height: 200px;
+    width: 15%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    width: 40%;
+}
+
+#scores {
+    display: flex;
+    gap: 30%;
+    font-size: 175%;
+}
+
+#roundOutput{
+    font-size: 180%;
+}
